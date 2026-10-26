@@ -7,7 +7,7 @@ set shopt -e
 
 # TODO: Move these env vars to Dockerfile and use them in the justfile also.
 BASE_URI=https://modellen.netbeheernederland.nl
-ORG=Netbeheer-Nederland
+ORG=netbeheernederland
 TEAM=team-semantiek
 MAIN_BRANCH_NAME=main
 

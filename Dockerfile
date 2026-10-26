@@ -5,7 +5,7 @@ ENV RUNNING_IN_DOCKER=true
 ENV NODE_PATH=/usr/lib/node_modules
 ENV SCRIPTS=/opt/build
 ENV SHELL=/bin/bash
-ENV ENV_URL=https://ghcr.io/netbeheer-nederland/build-doc:0.6
+ENV ENV_URL=https://ghcr.io/netbeheernederland/build-doc:0.6
 ENV PATH=$PATH:/opt/build
 
 # Whether in CI/CD pipeline or not. Overridden by GitHub Actions if running there.
@@ -81,6 +81,6 @@ USER $USER
 RUN touch ~/.bashrc && echo 'source /usr/share/bash-completion/completions/just' >> ~/.bashrc
 
 # Metadata
-LABEL org.opencontainers.image.source=https://github.com/netbeheer-nederland/build-doc
+LABEL org.opencontainers.image.source=https://github.com/netbeheernederland/build-doc
 LABEL org.opencontainers.image.description="Netbeheer Nederland environment for writing documentation projects."
 LABEL org.opencontainers.image.licenses=Apache-2.0

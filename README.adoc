@@ -70,19 +70,19 @@ Make sure the current working directory is the repository root. Then, to build t
 
 [source,shell]
 ....
-$ docker build -t ghcr.io/netbeheer-nederland/build-doc:upcoming .
+$ docker build -t ghcr.io/netbeheernederland/build-doc:upcoming .
 ....
 
 If building has succeeded, push the built image to GHCR:
 
 [source,shell]
 ....
-$ docker push ghcr.io/netbeheer-nederland/build-doc:upcoming
+$ docker push ghcr.io/netbeheernederland/build-doc:upcoming
 ....
 
 ==== New release
 
-Go to the https://github.com/Netbeheer-Nederland/build-doc/releases[Releases] page of this repository on GitHub, determine the version specifier of the new release -- e.g. `0.11` -- and create a new release for it.
+Go to the https://github.com/netbeheernederland/build-doc/releases[Releases] page of this repository on GitHub, determine the version specifier of the new release -- e.g. `0.11` -- and create a new release for it.
 
 Moving on, we want to build the new Docker image and publish it.
 
@@ -91,7 +91,7 @@ Make sure the current working directory is the repository root. Then, to build t
 
 [source,shell]
 ....
-$ docker build -t ghcr.io/netbeheer-nederland/build-doc:<VERSION> -t ghcr.io/netbeheer-nederland/build-doc:latest .
+$ docker build -t ghcr.io/netbeheernederland/build-doc:<VERSION> -t ghcr.io/netbeheernederland/build-doc:latest .
 ....
 
 where `<VERSION>` corresponds to the version specifier determined earlier (e.g. `0.11`).
@@ -100,9 +100,9 @@ If building has succeeded, push the built image to GHCR:
 
 [source,shell]
 ....
-$ docker push ghcr.io/netbeheer-nederland/build-doc:<VERSION>
+$ docker push ghcr.io/netbeheernederland/build-doc:<VERSION>
 ...
-$ docker push ghcr.io/netbeheer-nederland/build-doc:latest
+$ docker push ghcr.io/netbeheernederland/build-doc:latest
 ...
 ....
 
